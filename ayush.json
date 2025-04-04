@@ -1,0 +1,22 @@
+{
+    "student":[
+        {
+            "name":"ayush",
+            "contact":7909863042,
+            "age":21,
+            "gmail":"kirarpatel541@gmail.com"
+        },
+        {
+            "name":"ayush",
+            "contact":7909863042,
+            "age":21,
+            "gmail":"kirarpatel541@gmail.com"
+        },
+        {
+            "name":"ayush",
+            "contact":7909863042,
+            "age":21,
+            "gmail":"kirarpatel541@gmail.com"
+        }
+    ]
+}
