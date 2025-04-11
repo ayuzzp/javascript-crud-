@@ -1,30 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Student Table</title>
 </head>
 <body>
-    <!-- <h1 id="head">HEADING</h1>
-    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    <button onclick="demo()">clickkk</button>
-    <h1 onmouseover="cat()">cat </h1>
-    <h1 onmouseover="dog()">dog </h1>
-    <div>
-        <img src="" alt="" id="img" style="height: auto; width: auto; border: 2px solid black;" >
-    </div> -->
-<table border="2">
-    <thead>
-        <tr>
-            <td>name</td>
-            <td>contact</td>
-            <td>age</td>
-            <td>gmail</td>
-        </tr>
-    </thead>
-    <tbody id="showdata"></tbody>
-</table>
+
+    <h2>Student Records</h2>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Contact</th>
+                <th>Country</th>
+                <th>Age</th>
+                <th>Gmail</th>
+                <th colspan="2">Actions</th>
+            </tr>
+        </thead>
+        <tbody id="showdata">
+            <!-- Data will be loaded here -->
+        </tbody>
+    </table>
+
+    <br><hr><br>
+
+    <div id="formcontainer">
+        <!-- Form will be loaded here when updating -->
+    </div>
 
     <script src="prac.js"></script>
 </body>

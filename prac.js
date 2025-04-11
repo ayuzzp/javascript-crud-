@@ -60,23 +60,112 @@
 // }
 // console.log(Object.keys(obj))
 // console.log(Object.values(obj))
+let fetchData = async () => {
+    let url = "http://localhost:3000/student";
+    let res = await fetch(url, { method: "GET" });
+    let data = await res.json();
+    console.log(data);
 
-let fetchData= async()=>{
-    let url="http://localhost:3000/student"
-    let res = await fetch(url,{method:"GET"})
-    let data = await res.json()
-    console.log(data)
-    let table= document.querySelector("#showdata")
-    data.map((e)=>{
-        table.innerHTML+=`
+    let table = document.querySelector("#showdata");
+    table.innerHTML = ""; // clear previous data
+
+    data.map((e) => {
+        table.innerHTML += `
         <tr> 
-        <td>${e.name} </td>
-        <td>${e.contact} </td>
-        <td>${e.age} </td>
-        <td>${e.gmail} </td>
-        </tr>
-        `
+            <td>${e.name}</td>
+            <td>${e.contact}</td>
+            <td>${e.country}</td>
+            <td>${e.age}</td>
+            <td>${e.gmail}</td>
+            <td onclick="del('${e.id}')">Delete</td>
+            <td onclick="formfill('${e.id}')">Update</td>
+        </tr>`;
+    });
+};
+
+let del = (id) => {
+    let url = `http://localhost:3000/student/${id}`;
+    fetch(url, { method: "DELETE" }).then(() => fetchData());
+};
+
+let book = () => {
+    let inpname = document.querySelector('#name').value;
+    let inpcontact = document.querySelector('#contact').value;
+    let inpcountry = document.querySelector('#country').value;
+    let inpage = document.querySelector('#age').value;
+    let inpgmail = document.querySelector('#gmail').value;
+
+    let url = "http://localhost:3000/student";
+
+    fetch(url, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            name: inpname,
+            contact: inpcontact,
+            country: inpcountry,
+            age: inpage,
+            gmail: inpgmail
+        })
     })
-    
-}
+    .then(() => {
+        location.href = "prac.html";
+    })
+    .catch(err => console.log(err));
+};
+
+let update = () => {
+    let id = document.querySelector('#id').value;
+    let url = `http://localhost:3000/student/${id}`;
+    let updatedData = {
+        name: document.querySelector('#name').value,
+        contact: document.querySelector('#contact').value,
+        country: document.querySelector('#country').value,
+        age: document.querySelector('#age').value,
+        gmail: document.querySelector('#gmail').value
+    };
+
+    fetch(url, {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json"
+        },                                                                          
+        body: JSON.stringify(updatedData)
+    }).then(() => location.href = "prac.html");
+};
+
+
+let formfill = async (id) => {
+    let url = `http://localhost:3000/student/${id}`;
+    let res = await fetch(url, { method: "GET" });
+    let data = await res.json();
+    console.log(data);
+
+    let FormData = document.querySelector('#showdata');
+    FormData.innerHTML = `
+        Enter Name: <input type="text" id="name" value="${data.name}"> <br><br>
+        Enter Contact: <input type="number" id="contact" value="${data.contact}"> <br><br>
+        Choose Country: 
+        <select id="country">
+            <option value="India">India</option>
+            <option value="Usa">Usa</option>
+            <option value="Canada">Canada</option>
+            <option value="Germany">Germany</option>
+        </select> <br><br>
+        Enter Age: <input type="number" id="age" value="${data.age}"> <br><br>
+        Enter Gmail: <input type="text" id="gmail" value="${data.gmail}"> <br><br>
+        <input type="hidden" id="id" value="${data.id}">
+        <input type="submit" value="Update" onclick="return update()">
+    `;
+
+    // Set selected country
+    document.querySelector('#country').value = data.country;
+};
+
 fetchData();
+ 
+// aos
+// vanta
+// gsam

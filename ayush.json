@@ -1,22 +1,44 @@
 {
-    "student":[
-        {
-            "name":"ayush",
-            "contact":7909863042,
-            "age":21,
-            "gmail":"kirarpatel541@gmail.com"
-        },
-        {
-            "name":"ayush",
-            "contact":7909863042,
-            "age":21,
-            "gmail":"kirarpatel541@gmail.com"
-        },
-        {
-            "name":"ayush",
-            "contact":7909863042,
-            "age":21,
-            "gmail":"kirarpatel541@gmail.com"
-        }
-    ]
+  "student": [
+    {
+      "name": "pranjal",
+      "contact": "6261823404",
+      "country": "Canada",
+      "age": "24",
+      "gmail": "pranjal@gmail.com",
+      "id": "9bd2"
+    },
+    {
+      "name": "ayuyzzz",
+      "contact": "3463636",
+      "country": "Germany",
+      "age": "44",
+      "gmail": "grgerrer",
+      "id": "ffc9"
+    },
+    {
+      "name": "ruhi",
+      "contact": "6261823404",
+      "country": "Usa",
+      "age": "21",
+      "gmail": "ruhi22@gmail.com",
+      "id": "7e16"
+    },
+    {
+      "id": "7e4a",
+      "name": "ankita",
+      "contact": "7909863042",
+      "country": "India",
+      "age": "22",
+      "gmail": "ankita121@gmail.com"
+    },
+    {
+      "name": "pranjal",
+      "contact": "8989212130",
+      "country": "India",
+      "age": "22",
+      "gmail": "pranjal@gmail.com",
+      "id": "4655"
+    }
+  ]
 }
