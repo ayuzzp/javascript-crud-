@@ -36,9 +36,25 @@
       "name": "pranjal",
       "contact": "8989212130",
       "country": "India",
-      "age": "77",
-      "gmail": "kirarpatyel541@gmail.com",
-      "id": "5106"
+      "age": "99",
+      "gmail": "pranjal@gmail.com",
+      "id": "2ec1"
+    },
+    {
+      "name": "satyam",
+      "contact": "6457474",
+      "country": "India",
+      "age": "45",
+      "gmail": "ayuzzpatel541@gmail.com",
+      "id": "549f"
+    },
+    {
+      "id": "68db",
+      "name": "umakant",
+      "contact": "55235352353",
+      "country": "Germany",
+      "age": "27",
+      "gmail": "umakant@gmail.com"
     }
   ]
 }

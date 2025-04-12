@@ -1,42 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Student Table</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Records</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <div data-aos="zoom-in" data-aos-duration="1000" class="zoom-box" >
+  <div data-aos="zoom-in" data-aos-duration="1000" class="zoom-box">
     <h2>Student Records</h2>
 
     <table border="1">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Contact</th>
-                <th>Country</th>
-                <th>Age</th>
-                <th>Gmail</th>
-                <th colspan="2">Actions</th>
-            </tr>
-        </thead>
-        <tbody id="showdata">
-            <!-- Data will be loaded here -->
-        </tbody>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Contact</th>
+          <th>Country</th>
+          <th>Age</th>
+          <th>Gmail</th>
+          <th colspan="2">Actions</th>
+        </tr>
+      </thead>
+      <tbody id="showdata">
+        <!-- Data will be populated here -->
+      </tbody>
     </table>
 
     <br><hr><br>
 
-    <div id="formcontainer">
-        <!-- Form will be loaded here when updating -->
-    </div>
-</div>
+    <div id="formcontainer"></div>
+    <br>
+    <a href="index.html">Add New Student</a>
+  </div>
 
-    <script src="prac.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-  
+  <script src="prac.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
