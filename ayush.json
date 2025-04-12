@@ -27,10 +27,18 @@
     {
       "name": "pranjal",
       "contact": "8989212130",
-      "country": "India",
+      "country": "Canada",
       "age": "55",
       "gmail": "ruhi@gmail.com",
       "id": "c21e"
+    },
+    {
+      "name": "pranjal",
+      "contact": "8989212130",
+      "country": "India",
+      "age": "77",
+      "gmail": "kirarpatyel541@gmail.com",
+      "id": "5106"
     }
   ]
 }
