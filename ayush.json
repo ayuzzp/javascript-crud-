@@ -25,20 +25,12 @@
       "id": "4655"
     },
     {
-      "name": "ayush patel",
-      "contact": "43343",
-      "country": "India",
-      "age": "23",
-      "gmail": "4hrhbreb",
-      "id": "aebe"
-    },
-    {
-      "id": "c21e",
       "name": "pranjal",
       "contact": "8989212130",
       "country": "India",
-      "age": "22",
-      "gmail": "ruhi@gmail.com"
+      "age": "55",
+      "gmail": "ruhi@gmail.com",
+      "id": "c21e"
     }
   ]
 }

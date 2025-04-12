@@ -1,39 +1,57 @@
-/* Flip container styling */
-.flip-container {
+/* Colorful gradient background */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+  }
+  
+  /* Flip container (form) */
+  .flip-container {
     max-width: 400px;
     margin: 60px auto;
     padding: 25px 20px;
-    background: linear-gradient(135deg, #ffecd2, #fcb69f);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
     border-radius: 20px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
     transition: transform 0.3s ease;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px solid #ff6b6b;
   }
   
+  /* Form layout */
   .flip-container form {
     display: flex;
     flex-direction: column;
   }
   
+  /* Input and select */
   .flip-container input,
   .flip-container select {
-    padding: 10px;
-    margin-bottom: 12px;
-    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 16px;
+    border-radius: 8px;
     border: none;
-    font-size: 15px;
+    font-size: 16px;
     outline: none;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.1);
   }
   
+  /* Submit button */
   .flip-container input[type="submit"] {
     background: #ff6b6b;
     color: white;
     font-weight: bold;
     cursor: pointer;
-    border: none;
     transition: background 0.3s ease, transform 0.2s ease;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
   }
   
   .flip-container input[type="submit"]:hover {
@@ -44,17 +62,16 @@
   .flip-container input[type="submit"]:active {
     transform: scale(0.95);
   }
-
   
-
+  /* Table container */
   .zoom-box {
     max-width: 900px;
     margin: 50px auto;
     padding: 30px;
-    background: linear-gradient(135deg, #c3ecf5, #a1c4fd);
+    background: rgba(255, 255, 255, 0.8);
     border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
   }
   
   /* Heading styling */
@@ -62,6 +79,9 @@
     text-align: center;
     margin-bottom: 20px;
     color: #333;
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff6b6b;
   }
   
   /* Table styling */
@@ -80,24 +100,30 @@
   }
   
   .zoom-box th {
-    background-color: #007BFF;
+    background-color: #ff6b6b;
     color: white;
+    font-size: 16px;
   }
   
   .zoom-box tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #f9f9f9;
   }
   
   .zoom-box tr:hover {
-    background-color: #e0f7fa;
+    background-color: #f2f2f2;
     transition: background-color 0.3s ease;
+  }
+  
+  .zoom-box td {
+    font-size: 15px;
+    color: #555;
   }
   
   /* Divider styling */
   .zoom-box hr {
     border: none;
     height: 2px;
-    background-color: #007BFF;
+    background-color: #ff6b6b;
     margin: 30px 0;
   }
   
