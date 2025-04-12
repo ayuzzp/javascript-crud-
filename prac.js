@@ -61,7 +61,7 @@
 // console.log(Object.keys(obj))
 // console.log(Object.values(obj))
 let fetchData = async () => {
-    let url = "http://localhost:3000/student";
+    let url = "http://localhost:4000/student";
     let res = await fetch(url, { method: "GET" });
     let data = await res.json();
     console.log(data);
@@ -84,7 +84,7 @@ let fetchData = async () => {
 };
 
 let del = (id) => {
-    let url = `http://localhost:3000/student/${id}`;
+    let url = `http://localhost:4000/student/${id}`;
     fetch(url, { method: "DELETE" }).then(() => fetchData());
 };
 
@@ -95,7 +95,7 @@ let book = () => {
     let inpage = document.querySelector('#age').value;
     let inpgmail = document.querySelector('#gmail').value;
 
-    let url = "http://localhost:3000/student";
+    let url = "http://localhost:4000/student";
 
     fetch(url, {
         method: "POST",
@@ -118,7 +118,7 @@ let book = () => {
 
 let update = () => {
     let id = document.querySelector('#id').value;
-    let url = `http://localhost:3000/student/${id}`;
+    let url = `http://localhost:4000/student/${id}`;
     let updatedData = {
         name: document.querySelector('#name').value,
         contact: document.querySelector('#contact').value,
@@ -138,7 +138,7 @@ let update = () => {
 
 
 let formfill = async (id) => {
-    let url = `http://localhost:3000/student/${id}`;
+    let url = `http://localhost:4000/student/${id}`;
     let res = await fetch(url, { method: "GET" });
     let data = await res.json();
     console.log(data);

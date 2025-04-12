@@ -1,0 +1,103 @@
+/* Flip container styling */
+.flip-container {
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 25px 20px;
+    background: linear-gradient(135deg, #ffecd2, #fcb69f);
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .flip-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .flip-container input,
+  .flip-container select {
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    outline: none;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .flip-container input[type="submit"] {
+    background: #ff6b6b;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .flip-container input[type="submit"]:hover {
+    background: #ff3b3b;
+    transform: scale(1.05);
+  }
+  
+  .flip-container input[type="submit"]:active {
+    transform: scale(0.95);
+  }
+
+  
+
+  .zoom-box {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #c3ecf5, #a1c4fd);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Heading styling */
+  .zoom-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Table styling */
+  .zoom-box table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .zoom-box th,
+  .zoom-box td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .zoom-box th {
+    background-color: #007BFF;
+    color: white;
+  }
+  
+  .zoom-box tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .zoom-box tr:hover {
+    background-color: #e0f7fa;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Divider styling */
+  .zoom-box hr {
+    border: none;
+    height: 2px;
+    background-color: #007BFF;
+    margin: 30px 0;
+  }
+  

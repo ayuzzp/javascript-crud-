@@ -1,28 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+  <title>CRUD App</title>
 </head>
 <body>
-    <form action="">
-        Enter Name : <input type="text" id="name"> <br> <br>
-        Enter contact : <input type="number" id="contact"> <br> <br>
-        Choose Country : <select  id="country">
-            <option value="India">India</option>
-            <option value="Usa">Usa</option>
-            <option value="Cannada">Cannada</option>
-            <option value="Germany">Germany</option>
-        </select> <br> <br>
-        Enter age : <input type="number" id="age"> <br> <br>
-        Enter gmail : <input type="text" id="gmail"> <br> <br>
-        Enter id : <input type="text" id="id"> <br> <br>
+  <div data-aos="zoom-in-up" data-aos-duration="1000" class="flip-container">
+    <form onsubmit="return book()">
+      Enter Name : <input type="text" id="name" required><br><br>
+      Enter Contact : <input type="number" id="contact" required><br><br>
+      Choose Country : 
+      <select id="country">
+        <option value="India">India</option>
+        <option value="Usa">Usa</option>
+        <option value="Cannada">Cannada</option>
+        <option value="Germany">Germany</option>
+      </select><br><br>
+      Enter Age : <input type="number" id="age" required><br><br>
+      Enter Gmail : <input type="email" id="gmail" required><br><br>
+      Enter ID : <input type="text" id="id" required><br><br>
 
-        <input type="submit" value="Add" onclick="return book()">
+      <input type="submit" value="Add">
     </form>
-    
-    <div id="datashow"></div>
-    <script src="prac.js"></script>
+  </div>
+
+  <div id="datashow"></div>
+
+  <script src="prac.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

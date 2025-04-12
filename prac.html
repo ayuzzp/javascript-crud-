@@ -2,9 +2,11 @@
 <html>
 <head>
     <title>Student Table</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+ <div data-aos="zoom-in" data-aos-duration="1000" class="zoom-box" >
     <h2>Student Records</h2>
 
     <table border="1">
@@ -28,7 +30,12 @@
     <div id="formcontainer">
         <!-- Form will be loaded here when updating -->
     </div>
+</div>
 
     <script src="prac.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
